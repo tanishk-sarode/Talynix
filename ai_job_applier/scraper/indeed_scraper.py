@@ -1,1 +1,0 @@
-"""Indeed job scraper module."""

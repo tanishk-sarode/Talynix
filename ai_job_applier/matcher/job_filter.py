@@ -1,1 +1,0 @@
-"""Job filtering logic."""

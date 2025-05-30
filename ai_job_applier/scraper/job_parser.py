@@ -1,1 +1,0 @@
-"""Job description parser module."""
