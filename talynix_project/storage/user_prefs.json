@@ -1,0 +1,41 @@
+{
+  "preferred_locations": [
+    "Bangalore",
+    "Hyderabad",
+    "Pune",
+    "Mumbai",
+    "Delhi",
+    "Chennai",
+    "Gurgaon",
+    "Noida",
+    "Remote",
+    "India",
+    "San Francisco",
+    "Seattle",
+    "New York",
+    "London",
+    "Berlin",
+    "Singapore",
+    "Toronto",
+    "Sydney",
+    "Dublin"
+  ],
+  "target_roles": [
+    "Software Engineer",
+    "Data Scientist",
+    "AI Engineer",
+    "ML Engineer",
+    "Backend Developer",
+    "Frontend Developer",
+    "Full Stack Developer",
+    "DevOps Engineer",
+    "Product Manager",
+    "Research Scientist",
+    "SDE",
+    "Intern"
+  ],
+  "min_experience": 0,
+  "salary_range": "",
+  "notice_period": "",
+  "company_preference": "Global > Indian"
+}

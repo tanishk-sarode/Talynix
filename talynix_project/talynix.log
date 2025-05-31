@@ -1,0 +1,124 @@
+2025-05-31 16:38:42,892 INFO User preferences saved.
+2025-05-31 16:38:51,166 INFO Google: 0 jobs scraped.
+2025-05-31 16:38:52,233 INFO Microsoft: 0 jobs scraped.
+2025-05-31 16:38:52,235 INFO Saved 0 jobs to jobs_raw.json.
+2025-05-31 16:38:52,235 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:38:52,235 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:38:52,236 INFO Saved 0 filtered jobs.
+2025-05-31 16:42:55,287 INFO Google: 0 jobs scraped.
+2025-05-31 16:42:56,380 INFO Microsoft: 0 jobs scraped.
+2025-05-31 16:42:56,382 INFO Saved 0 jobs to jobs_raw.json.
+2025-05-31 16:42:56,383 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:42:56,384 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:42:56,384 INFO Saved 0 filtered jobs.
+2025-05-31 16:44:38,459 INFO Google: 0 jobs scraped.
+2025-05-31 16:44:39,708 INFO Microsoft: 0 jobs scraped.
+2025-05-31 16:44:39,710 INFO Saved 0 jobs to jobs_raw.json.
+2025-05-31 16:44:39,711 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:44:39,711 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:44:39,712 INFO Saved 0 filtered jobs.
+2025-05-31 16:47:22,136 INFO Google: 0 jobs scraped.
+2025-05-31 16:47:23,251 INFO Microsoft: 0 jobs scraped.
+2025-05-31 16:47:23,252 INFO Saved 0 jobs to jobs_raw.json.
+2025-05-31 16:47:23,253 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:47:23,253 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:47:23,253 INFO Saved 0 filtered jobs.
+2025-05-31 16:47:35,442 INFO Google: 0 jobs scraped.
+2025-05-31 16:47:36,571 INFO Microsoft: 0 jobs scraped.
+2025-05-31 16:47:36,573 INFO Saved 0 jobs to jobs_raw.json.
+2025-05-31 16:47:36,574 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:47:36,575 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:47:36,575 INFO Saved 0 filtered jobs.
+2025-05-31 16:50:15,976 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:50:15,976 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:50:15,977 INFO Saved 0 filtered jobs.
+2025-05-31 16:50:24,091 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:50:24,091 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:50:24,091 INFO Saved 0 filtered jobs.
+2025-05-31 16:50:32,635 INFO User preferences saved.
+2025-05-31 16:50:34,965 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:50:34,965 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:50:34,966 INFO Saved 0 filtered jobs.
+2025-05-31 16:50:40,177 INFO User preferences saved.
+2025-05-31 16:53:49,433 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:53:49,434 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:53:49,434 INFO Saved 0 filtered jobs.
+2025-05-31 16:56:34,608 INFO Filter1: 0 jobs after eligibility filter.
+2025-05-31 16:56:34,609 INFO Filter2: 0 jobs after skill match filter.
+2025-05-31 16:56:34,609 INFO Saved 0 filtered jobs.
+2025-05-31 16:57:49,743 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 16:57:49,743 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 16:57:49,744 INFO Saved 4 filtered jobs.
+2025-05-31 17:03:23,055 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 17:03:23,056 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 17:03:23,056 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 17:03:23,057 INFO Saved 4 filtered jobs.
+2025-05-31 17:04:34,017 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 17:04:34,017 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 17:04:34,017 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 17:04:34,018 INFO Saved 4 filtered jobs.
+2025-05-31 19:01:09,640 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:01:09,641 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:01:09,641 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:01:09,642 INFO Saved 4 filtered jobs.
+2025-05-31 19:31:11,808 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:31:11,808 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:31:11,809 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:31:11,809 INFO Saved 4 filtered jobs.
+2025-05-31 19:33:06,177 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:33:06,178 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:33:06,178 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:33:06,179 INFO Saved 4 filtered jobs.
+2025-05-31 19:34:21,154 INFO Saved 45 jobs to jobs_raw.json.
+2025-05-31 19:36:24,150 INFO Saved 44 jobs to jobs_raw.json.
+2025-05-31 19:38:10,204 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:38:10,204 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:38:10,205 INFO Saved 10 filtered jobs.
+2025-05-31 19:39:22,793 INFO Saved 44 jobs to jobs_raw.json.
+2025-05-31 19:39:32,947 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:39:32,947 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:39:32,948 INFO Saved 10 filtered jobs.
+2025-05-31 19:40:39,065 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:40:39,066 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:40:39,066 INFO Saved 10 filtered jobs.
+2025-05-31 19:40:45,602 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:40:45,602 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:40:45,605 INFO Saved 10 filtered jobs.
+2025-05-31 19:41:21,388 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:41:21,389 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:41:21,390 INFO Saved 10 filtered jobs.
+2025-05-31 19:41:46,104 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:41:46,105 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:41:46,106 INFO Saved 10 filtered jobs.
+2025-05-31 19:42:39,907 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:42:39,907 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:42:39,909 INFO Saved 10 filtered jobs.
+2025-05-31 19:43:59,499 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:43:59,500 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:43:59,502 INFO Saved 10 filtered jobs.
+2025-05-31 19:45:15,644 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 19:45:15,644 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 19:45:15,645 INFO Saved 10 filtered jobs.
+2025-05-31 20:05:58,585 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 20:05:58,586 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 20:05:58,587 INFO Saved 10 filtered jobs.
+2025-05-31 20:07:40,359 INFO Saved 117 jobs to jobs_raw.json.
+2025-05-31 20:08:16,983 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 20:08:16,983 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 20:08:16,985 INFO Saved 10 filtered jobs.
+2025-05-31 20:08:25,912 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 20:08:25,912 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 20:08:25,912 INFO Saved 10 filtered jobs.
+2025-05-31 20:08:34,133 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 20:08:34,134 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 20:08:34,135 INFO Saved 10 filtered jobs.
+2025-05-31 20:09:45,961 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 20:09:45,962 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 20:09:45,963 INFO Saved 10 filtered jobs.
+2025-05-31 20:21:19,390 INFO Saved 117 jobs to jobs_raw.json.
+2025-05-31 20:21:28,785 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 20:21:28,785 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 20:21:28,785 INFO Saved 10 filtered jobs.
+2025-05-31 20:21:39,492 WARNING Debug: Skipping eligibility filters, returning all jobs.
+2025-05-31 20:21:39,492 WARNING Debug: Skipping skill match filter, returning all jobs.
+2025-05-31 20:21:39,494 INFO Saved 10 filtered jobs.

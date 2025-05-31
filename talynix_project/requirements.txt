@@ -1,0 +1,15 @@
+# List all pip dependencies
+streamlit
+spacy
+PyPDF2
+python-docx
+pdfminer.six
+pandas
+numpy
+requests
+beautifulsoup4
+selenium
+rapidfuzz
+requests_html
+scikit-learn
+# watchdog
