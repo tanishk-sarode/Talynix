@@ -1,29 +1,5 @@
 [
   {
-    "job_id": "2985409",
-    "title": "Software Development Engineer",
-    "company": "Amazon",
-    "location": "Bengaluru, KA, IND",
-    "posting_date": "May 19, 2025",
-    "work_type": null,
-    "requirements": "Basic qualifications:1+ years of non-internship professional software development experienceExperience programming with at least one software programming language",
-    "description": null,
-    "url": "https://www.amazon.jobs/en/jobs/2985409/software-development-engineer",
-    "skill_match_pct": 100
-  },
-  {
-    "job_id": "2985420",
-    "title": "Software Development Engineer",
-    "company": "Amazon",
-    "location": "Bengaluru, KA, IND",
-    "posting_date": "May 19, 2025",
-    "work_type": null,
-    "requirements": "Basic qualifications:1+ years of non-internship professional software development experienceExperience programming with at least one software programming language",
-    "description": null,
-    "url": "https://www.amazon.jobs/en/jobs/2985420/software-development-engineer",
-    "skill_match_pct": 100
-  },
-  {
     "job_id": "2986263",
     "title": "Software Development Engineer, Software Dev Engineer",
     "company": "Amazon",
@@ -33,7 +9,58 @@
     "requirements": "Basic qualifications:BE/BTech Computer Science / Information ScienceKnowledge of Computer Science fundamentals such as object-oriented design, algorithm design, data structures, problem solving, and complexity analysis.Familiarity with programing languages such as Java, C/C++ or Python.",
     "description": null,
     "url": "https://www.amazon.jobs/en/jobs/2986263/software-development-engineer-software-dev-engineer",
-    "skill_match_pct": 100
+    "eligible": true,
+    "match_score": 55.0,
+    "score_breakdown": {
+      "skill_match": 15,
+      "title_match": 12.0,
+      "location_score": 10,
+      "recency_score": 10,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Recent posting, Prestigious company"
+  },
+  {
+    "job_id": "2987827",
+    "title": "Software Development Engineer I , Software Dev Engineer",
+    "company": "Amazon",
+    "location": "Bangalore, KA, IND",
+    "posting_date": "May 20, 2025",
+    "work_type": null,
+    "requirements": "Basic qualifications:BE/BTech Computer Science / Information ScienceKnowledge of Computer Science fundamentals such as object-oriented design, algorithm design, data structures, problem solving, and complexity analysis.Familiarity with programing languages such as Java, C/C++ or Python.",
+    "description": null,
+    "url": "https://www.amazon.jobs/en/jobs/2987827/software-development-engineer-i-software-dev-engineer",
+    "eligible": true,
+    "match_score": 55.0,
+    "score_breakdown": {
+      "skill_match": 15,
+      "title_match": 12.0,
+      "location_score": 10,
+      "recency_score": 10,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Recent posting, Prestigious company"
+  },
+  {
+    "job_id": "Hyderabad, TS, IND",
+    "title": "Software Dev Engineer I, Amazon University Talent Acquisition",
+    "company": "Amazon",
+    "location": "Bangalore, KA, IND",
+    "posting_date": "May 23, 2025",
+    "work_type": null,
+    "requirements": "Basic qualifications:Bachelor's degree or above in computer science, computer engineering, or related fieldKnowledge of Computer Science fundamentals such as object-oriented design, algorithm design, data structures, problem solving, and complexity analysis.Knowledge of programming languages such as C/C++, Python, Java or Perl",
+    "description": null,
+    "url": "https://www.amazon.jobs/en/jobs/2990700/software-dev-engineer-i-amazon-university-talent-acquisition",
+    "eligible": true,
+    "match_score": 52.0,
+    "score_breakdown": {
+      "skill_match": 13,
+      "title_match": 11.0,
+      "location_score": 10,
+      "recency_score": 10,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Recent posting, Prestigious company"
   },
   {
     "job_id": "2982519",
@@ -45,19 +72,58 @@
     "requirements": "Basic qualifications:BE/BTech Computer Science / Information ScienceKnowledge of Computer Science fundamentals such as object-oriented design, algorithm design, data structures, problem solving, and complexity analysis.Familiarity with programing languages such as Java, C/C++ or Python.",
     "description": null,
     "url": "https://www.amazon.jobs/en/jobs/2982519/software-development-engineer-software-dev-engineer",
-    "skill_match_pct": 100
+    "eligible": true,
+    "match_score": 50.0,
+    "score_breakdown": {
+      "skill_match": 15,
+      "title_match": 12.0,
+      "location_score": 10,
+      "recency_score": 5,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Prestigious company"
   },
   {
-    "job_id": "2985422",
-    "title": "Software Development Engineer",
+    "job_id": "2974474",
+    "title": "Software Dev Engineer",
     "company": "Amazon",
-    "location": "Bengaluru, KA, IND",
-    "posting_date": "May 19, 2025",
+    "location": "Hyderabad, TS, IND",
+    "posting_date": "May  6, 2025",
     "work_type": null,
     "requirements": "Basic qualifications:1+ years of non-internship professional software development experienceExperience programming with at least one software programming language",
     "description": null,
-    "url": "https://www.amazon.jobs/en/jobs/2985422/software-development-engineer",
-    "skill_match_pct": 100
+    "url": "https://www.amazon.jobs/en/jobs/2974474/software-dev-engineer",
+    "eligible": true,
+    "match_score": 49.0,
+    "score_breakdown": {
+      "skill_match": 14,
+      "title_match": 12.0,
+      "location_score": 10,
+      "recency_score": 5,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Prestigious company"
+  },
+  {
+    "job_id": "111007517923779270",
+    "title": "Software Engineer, University Graduate, 2026",
+    "company": "Google",
+    "location": "Bengaluru, Karnataka, India",
+    "posting_date": null,
+    "work_type": null,
+    "requirements": "Minimum qualifications\nBachelor's degree or equivalent practical experience.\nExperience working with Unix/Linux environments, distributed systems, machine learning, information retrieval, and TCP/IP.\nExperience programming in C, C++, Java, or Python.",
+    "description": null,
+    "url": "jobs/results/111007517923779270-software-engineer-university-graduate-2026?location=India&location=Netherlands&location=Germany&location=United+Arab+Emirates&skills=Python&target_level=EARLY&degree=BACHELORS&sort_by=relevance",
+    "eligible": true,
+    "match_score": 48.0,
+    "score_breakdown": {
+      "skill_match": 14,
+      "title_match": 14.0,
+      "location_score": 10,
+      "recency_score": 0,
+      "company_score": 10
+    },
+    "comments": "Preferred title, Preferred location, Prestigious company"
   },
   {
     "job_id": "2896786",
@@ -69,54 +135,78 @@
     "requirements": "Basic qualifications:Experience (non-internship) in professional software development, Experience programming with at least one software programming language (Java, Go, Kotlin, C++), Written and spoken proficiency in English.",
     "description": null,
     "url": "https://www.amazon.jobs/en/jobs/2896786/software-development-engineer",
-    "skill_match_pct": 100
+    "eligible": true,
+    "match_score": 46.0,
+    "score_breakdown": {
+      "skill_match": 16,
+      "title_match": 12.0,
+      "location_score": 10,
+      "recency_score": 0,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Prestigious company"
   },
   {
-    "job_id": "2907918",
-    "title": "Software Development Engineer I",
+    "job_id": "2910589",
+    "title": "SDE1 FTC",
+    "company": "Amazon",
+    "location": "Bangalore, KA, IND",
+    "posting_date": "February 25, 2025",
+    "work_type": null,
+    "requirements": "Basic qualifications:1+ years of non-internship professional software development experienceExperience programming with at least one software programming language",
+    "description": null,
+    "url": "https://www.amazon.jobs/en/jobs/2910589/sde1-ftc",
+    "eligible": true,
+    "match_score": 46.0,
+    "score_breakdown": {
+      "skill_match": 14,
+      "title_match": 14.0,
+      "location_score": 10,
+      "recency_score": 0,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Prestigious company"
+  },
+  {
+    "job_id": "2903514",
+    "title": "SDE-1 FTC",
+    "company": "Amazon",
+    "location": "Bangalore, KA, IND",
+    "posting_date": "February 17, 2025",
+    "work_type": null,
+    "requirements": "Basic qualifications:1+ years of non-internship professional software development experienceExperience programming with at least one software programming language",
+    "description": null,
+    "url": "https://www.amazon.jobs/en/jobs/2903514/sde-1-ftc",
+    "eligible": true,
+    "match_score": 46.0,
+    "score_breakdown": {
+      "skill_match": 14,
+      "title_match": 14.0,
+      "location_score": 10,
+      "recency_score": 0,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Prestigious company"
+  },
+  {
+    "job_id": "2968356",
+    "title": "SDE I \u2013 FTC",
     "company": "Amazon",
     "location": "Hyderabad, TS, IND",
-    "posting_date": "February 21, 2025",
+    "posting_date": "April 29, 2025",
     "work_type": null,
     "requirements": "Basic qualifications:1+ years of non-internship professional software development experienceExperience programming with at least one software programming language",
     "description": null,
-    "url": "https://www.amazon.jobs/en/jobs/2907918/software-development-engineer-i",
-    "skill_match_pct": 100
-  },
-  {
-    "job_id": "2984374",
-    "title": "Software Development Engineer I",
-    "company": "Amazon",
-    "location": "Bengaluru, KA, IND",
-    "posting_date": "May 16, 2025",
-    "work_type": null,
-    "requirements": "Basic qualifications:1+ years of non-internship professional software development experienceExperience programming with at least one software programming language",
-    "description": null,
-    "url": "https://www.amazon.jobs/en/jobs/2984374/software-development-engineer-i",
-    "skill_match_pct": 100
-  },
-  {
-    "job_id": "2944988",
-    "title": "Software Development Engineer I",
-    "company": "Amazon",
-    "location": "Hyderabad, TS, IND",
-    "posting_date": "April  3, 2025",
-    "work_type": null,
-    "requirements": "Basic qualifications:1+ years of non-internship professional software development experienceExperience programming with at least one software programming language",
-    "description": null,
-    "url": "https://www.amazon.jobs/en/jobs/2944988/software-development-engineer-i",
-    "skill_match_pct": 100
-  },
-  {
-    "job_id": "2989803",
-    "title": "Software Development Engineer - FTC",
-    "company": "Amazon",
-    "location": "Bengaluru, KA, IND",
-    "posting_date": "May 22, 2025",
-    "work_type": null,
-    "requirements": "Basic qualifications:1+ years of Software Dev experience.Bachelor\u2019s or Master\u2019s Degree in Computer Science, Computer Engineering, or related fieldComputer Science fundamentals in OO design, functional programming, data structure, and algorithm designExperience with front-end languages, libraries, and rendering technologies (e.g. JavaScript, HTML, CSS)Knowledge of front-end fundamentals (e.g. client vs. server rendering)",
-    "description": null,
-    "url": "https://www.amazon.jobs/en/jobs/2989803/software-development-engineer-ftc",
-    "skill_match_pct": 100
+    "url": "https://www.amazon.jobs/en/jobs/2968356/sde-i-ftc",
+    "eligible": true,
+    "match_score": 46.0,
+    "score_breakdown": {
+      "skill_match": 14,
+      "title_match": 14.0,
+      "location_score": 10,
+      "recency_score": 0,
+      "company_score": 8
+    },
+    "comments": "Preferred title, Preferred location, Prestigious company"
   }
 ]

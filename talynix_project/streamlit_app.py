@@ -4,8 +4,7 @@ import json
 from resume_parser import parse_resume
 from user_extractor import set_user_prefs, load_user_prefs, get_user_profile
 from job_scraper import run_job_scraper
-from filters import filter_jobs
-from ranker import rank_jobs
+from filters import filter_and_rank_jobs, evaluate_job_match
 
 STORAGE = 'talynix_project/storage/'
 
@@ -125,26 +124,93 @@ elif tab == 'Set Preferences':
 # --- Tab 3: Fetch & Filter Jobs ---
 elif tab == 'Fetch & Filter Jobs':
     st.header('Fetch & Filter Jobs')
+    # Resume preview/download
+    resume_json_path = os.path.join(STORAGE, 'resume_data.json')
+    if os.path.exists(resume_json_path):
+        with open(resume_json_path) as f:
+            resume_data = json.load(f)
+        st.subheader('Resume Preview')
+        st.write(resume_data.get('raw_text', '')[:1000] + '...')
+        st.download_button('Download Resume JSON', json.dumps(resume_data, indent=2), file_name='resume_data.json')
+    # Show ineligible jobs with reasons
+    show_ineligible = st.checkbox('Show ineligible jobs with reasons', value=False)
+    # Filters/sorting
+    sort_by = st.selectbox('Sort jobs by', ['match_score', 'company', 'location'])
+    filter_company = st.text_input('Filter by company (optional)').strip().lower()
+    filter_location = st.text_input('Filter by location (optional)').strip().lower()
     if st.button('Run Job Scraper & Filter → Get Top 10 Recommendations'):
         with st.spinner('Filtering jobs...'):
-            # run_job_scraper()  # <-- Disabled for local testing!
-            user_profile = get_user_profile()
-            filter_jobs(user_profile)
-            top10 = rank_jobs(user_profile)
-        st.success('Top 10 jobs ready!')
-        if os.path.exists(os.path.join(STORAGE, 'top10_jobs.json')):
-            with open(os.path.join(STORAGE, 'top10_jobs.json')) as f:
+            with open(os.path.join(STORAGE, 'user_prefs.json')) as f:
+                user_prefs = json.load(f)
+            resume_text = ''
+            try:
+                with open(os.path.join(STORAGE, 'resume_data.json')) as f:
+                    resume_json = json.load(f)
+                    resume_text = resume_json.get('raw_text', '')
+            except Exception:
+                pass
+            user_input = {
+                'resume': resume_text,
+                'job_posting': '',
+                'user_preferences': {
+                    'preferred_titles': user_prefs.get('target_roles', []),
+                    'location': user_prefs.get('preferred_locations', []),
+                    'experience_years': user_prefs.get('min_experience', 0),
+                    'job_type': 'Full-time'
+                }
+            }
+            with open(os.path.join(STORAGE, 'jobs_raw.json')) as f:
                 jobs = json.load(f)
-            st.subheader('Top 10 Recommended Jobs')
-            for i, job in enumerate(jobs, 1):
-                st.markdown(f"**{i}. [{job['title']}]({job['url']}) at {job['company']}**")
-                st.write(f"Location: {job['location']} | Score: {job.get('relevance_score', '-')}")
+            # Deduplicate jobs by url
+            seen = set()
+            deduped_jobs = []
+            for job in jobs:
+                url = job.get('url')
+                if url and url not in seen:
+                    seen.add(url)
+                    deduped_jobs.append(job)
+            company_prestige = { 'Google': 10, 'Microsoft': 9, 'Amazon': 8 }
+            top10 = filter_and_rank_jobs(user_input, deduped_jobs, company_prestige)
+            # Also get ineligible jobs with reasons
+            ineligible = []
+            for job in deduped_jobs:
+                result = evaluate_job_match(user_input, job, company_prestige)
+                if not result.get('eligible'):
+                    job_copy = job.copy()
+                    job_copy['reason'] = result.get('reason', 'Not eligible')
+                    ineligible.append(job_copy)
+            with open(os.path.join(STORAGE, 'filtered_jobs.json'), 'w') as f:
+                json.dump(top10, f, indent=2)
+            with open(os.path.join(STORAGE, 'top10_jobs.json'), 'w') as f:
+                json.dump(top10, f, indent=2)
+            with open(os.path.join(STORAGE, 'ineligible_jobs.json'), 'w') as f:
+                json.dump(ineligible, f, indent=2)
+        st.success('Top 10 jobs ready!')
+        # Filters/sorting for display
+        jobs = top10
+        if filter_company:
+            jobs = [j for j in jobs if filter_company in j.get('company', '').lower()]
+        if filter_location:
+            jobs = [j for j in jobs if filter_location in j.get('location', '').lower()]
+        if sort_by == 'company':
+            jobs = sorted(jobs, key=lambda x: x.get('company', ''))
+        elif sort_by == 'location':
+            jobs = sorted(jobs, key=lambda x: x.get('location', ''))
+        else:
+            jobs = sorted(jobs, key=lambda x: x.get('match_score', 0), reverse=True)
+        st.subheader('Top 10 Recommended Jobs')
+        for i, job in enumerate(jobs, 1):
+            with st.expander(f"{i}. {job['title']} at {job['company']}"):
+                st.markdown(f"**[{job['title']}]({job['url']}) at {job['company']}**")
+                st.write(f"Location: {job['location']} | Score: {job.get('match_score', '-')}")
+                st.write('**Score breakdown:**', job.get('score_breakdown', {}))
+                st.write('**Why this job?**', job.get('comments', ''))
                 desc = job['description'] if job['description'] else job.get('requirements', '')
                 if desc:
-                    st.write(desc[:150] + '...')
+                    st.write(desc[:300] + '...')
                 else:
                     st.write('(No description available)')
-                col1, col2 = st.columns(2)
+                col1, col2, col3 = st.columns(3)
                 with col1:
                     url = job['url'] if job['url'] else None
                     if url and isinstance(url, str):
@@ -158,6 +224,25 @@ elif tab == 'Fetch & Filter Jobs':
                             with open(os.path.join(STORAGE, 'top10_jobs.json'), 'w') as f:
                                 json.dump(jobs, f, indent=2)
                             st.rerun()
+                with col3:
+                    if st.button(f'Mark as Applied {i}'):
+                        applied_path = os.path.join(STORAGE, 'applied_jobs.json')
+                        applied = []
+                        if os.path.exists(applied_path):
+                            with open(applied_path) as f:
+                                applied = json.load(f)
+                        if not any(j.get('url') == job.get('url') for j in applied):
+                            applied.append(job)
+                            with open(applied_path, 'w') as f:
+                                json.dump(applied, f, indent=2)
+                            st.success('Marked as applied!')
+        # Show ineligible jobs with reasons
+        if show_ineligible:
+            st.subheader('Ineligible Jobs (with reasons)')
+            with open(os.path.join(STORAGE, 'ineligible_jobs.json')) as f:
+                ineligible = json.load(f)
+            for job in ineligible[:10]:
+                st.markdown(f"- **{job['title']}** at {job['company']} | {job.get('reason', '')}")
 
 # --- Tab 4: My Applications ---
 elif tab == 'My Applications':
